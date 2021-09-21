@@ -5,9 +5,10 @@ const path = require('path');
 module.exports = {
     entry:'./src/index.js',
     output: {
-        filename:'bundle.js',
+        filename:'bundlle.js',
         path: path.resolve(__dirname,'build')
     },
+    mode: 'production',
     module: {
         rules: [
             {
@@ -23,8 +24,7 @@ module.exports = {
     },
     plugins: [new HtmlWebpackPlugin(),new CleanWebpackPlugin(),],
     devServer: {
-        port: 9090,
-        open: true,
+        port: 8080,
     }
     
 }
