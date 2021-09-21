@@ -23,9 +23,9 @@ module.exports = {
         ]
     },
     plugins: [new HtmlWebpackPlugin(),new CleanWebpackPlugin(),],
-    devServer: {
-        port: 8080,
-        open: true,
-    }
+    // devServer: {
+    //     port: 8080,
+    //     open: true,
+    // }
     
 }
