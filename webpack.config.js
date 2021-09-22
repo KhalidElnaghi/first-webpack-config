@@ -22,7 +22,9 @@ module.exports = {
             },
         ]
     },
-    plugins: [new HtmlWebpackPlugin(),new CleanWebpackPlugin(),],
+    plugins: [new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, "src", "index.html")
+    }),new CleanWebpackPlugin(),],
     // devServer: {
     //     port: 8080,
     //     open: true,
